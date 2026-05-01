@@ -1,0 +1,6 @@
+# Tool version pins — matches devops-workstation-setup automation
+# Not enforced by asdf (we use direct installs), but documents expectations
+terraform 1.14.0
+kubectl 1.31.0
+helm 4.1.0
+terragrunt 1.0.0

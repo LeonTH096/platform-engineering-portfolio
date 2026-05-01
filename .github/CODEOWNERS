@@ -1,0 +1,9 @@
+# CODEOWNERS — auto-assigns reviewers on pull requests
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+* @LeonTH096
+
+/project-2-cloud-infrastructure/ @LeonTH096
+/project-1-platform-microservices/ @LeonTH096
+/.github/ @LeonTH096
+/docs/ @LeonTH096

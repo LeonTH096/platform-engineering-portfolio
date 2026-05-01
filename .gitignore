@@ -1,0 +1,117 @@
+# ===================================================================
+# Platform Engineering Portfolio — .gitignore
+# Covers: Terraform, Terragrunt, Kubernetes, Helm, Docker, Python,
+#         CI/CD artifacts, IDE, OS, secrets
+# ===================================================================
+
+# -------------------------------------------------------------------
+# Terraform
+# -------------------------------------------------------------------
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfplan
+tfplan
+planfile
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+# NOTE: .terraform.lock.hcl is deliberately NOT ignored.
+# It pins provider versions and MUST be committed.
+
+# -------------------------------------------------------------------
+# Terragrunt
+# -------------------------------------------------------------------
+.terragrunt-cache/
+
+# -------------------------------------------------------------------
+# Kubernetes
+# -------------------------------------------------------------------
+kubeconfig
+kubeconfig.*
+*.kubeconfig
+
+# -------------------------------------------------------------------
+# Helm
+# -------------------------------------------------------------------
+charts/*.tgz
+
+# -------------------------------------------------------------------
+# Docker
+# -------------------------------------------------------------------
+docker-compose.override.yml
+docker-compose.override.yaml
+
+# -------------------------------------------------------------------
+# Python (automation scripts)
+# -------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+venv/
+.venv/
+*.egg-info/
+
+# -------------------------------------------------------------------
+# Secrets & credentials
+# -------------------------------------------------------------------
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+!charts/**/*.crt
+.env
+.env.*
+!.env.example
+secrets/
+**/secrets.yaml
+**/secrets.yml
+!**/secrets.yaml.example
+azureauth.json
+.aws/credentials
+
+# -------------------------------------------------------------------
+# IDE & editor
+# -------------------------------------------------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.iml
+*.iws
+*.ipr
+*.swp
+*.swo
+
+# -------------------------------------------------------------------
+# OS artifacts
+# -------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*~
+.nfs*
+
+# -------------------------------------------------------------------
+# Misc
+# -------------------------------------------------------------------
+*.zip
+*.tar.gz
+*.tgz
+!charts/*.tgz
+*.rar
+*.log
+!docs/**/*.log
+tmp/
+temp/
+.tmp/
