@@ -2,7 +2,7 @@
 
 > Full blueprint will be generated in a subsequent step.
 > This document will contain the complete system design, component specifications,
-> timeline, cost estimates, and TeamSystem-specific interview talking points.
+> timeline, cost estimates, and specific interview talking points.
 
 ## Quick reference
 
